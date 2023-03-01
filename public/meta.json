@@ -1,13 +1,13 @@
 {
-    "type": "rich",
-    "version": "1.0",
-    "title": "",
-    "timestamp": "2023-01-02T23: 00: 00.000Z",
-    "author_name": "LEC Wooloo 🇪🇺 (@LEC_Wooloo)",
-    "author_url": "https://twitter.com/4eSport_Efrei",
-    "provider_url": "https://twitter.4esport.fr/img/twitter.png",
+    "url": "https:\/\/twitter.com\/LEC_Wooloo\/status\/1628530888010088450",
+    "author_name": "LEC Wooloo \uD83C\uDDEA\uD83C\uDDFA",
+    "author_url": "https:\/\/twitter.com\/LEC_Wooloo",
+    "html": "\u003Cblockquote class=\"twitter-tweet\"\u003E\u003Cp lang=\"en\" dir=\"ltr\"\u003E[Sources] Toplaner Wunder \uD83C\uDDE9\uD83C\uDDF0 will not be playing for Fnatic in the LEC next split.\u003Cbr\u003E\u003Cbr\u003EIt has not been fully decided who will replace him but Oscarinin \uD83C\uDDEA\uD83C\uDDF8 is likely to be promoted. \u003Ca href=\"https:\/\/t.co\/YKRJU7WAKR\"\u003Epic.twitter.com\/YKRJU7WAKR\u003C\/a\u003E\u003C\/p\u003E&mdash; LEC Wooloo \uD83C\uDDEA\uD83C\uDDFA (@LEC_Wooloo) \u003Ca href=\"https:\/\/twitter.com\/LEC_Wooloo\/status\/1628530888010088450?ref_src=twsrc%5Etfw\"\u003EFebruary 22, 2023\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n",
     "width": 550,
-    "html": null,
     "height": null,
-    "cache_age": "100"
+    "type": "rich",
+    "cache_age": "3153600000",
+    "provider_name": "Twitter",
+    "provider_url": "https:\/\/twitter.com",
+    "version": "1.0"
 }
