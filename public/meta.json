@@ -10,5 +10,6 @@
     "provider_url": "https://twitter.4esport.fr/img/twitter.png",
     "width": 550,
     "html": null,
-    "height": null
+    "height": null,
+    "cache_age": "100"
 }
