@@ -11,4 +11,6 @@ useServerSeoMeta({
 
 
 </script>
-<template></template>
+<template>
+  <img v-if="true" src="/img/meta.jpg" alt="">
+</template>
