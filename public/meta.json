@@ -1,0 +1,21 @@
+{
+    "type": "rich",
+    "title": "",
+    "description": "According to @anonimotum, Upset has reached a verbal agreement with Vitality for next split in the LEC",
+    "color": "#0ea5e9",
+    "timestamp": "2023-01-02T23: 00: 00.000Z",
+    "image": {
+        "url": "https://twitter.4esport.fr/img/meta.jpg",
+        "height": 0,
+        "width": 0
+    },
+    "author": {
+        "name": "LEC Wooloo 🇪🇺 (@LEC_Wooloo)",
+        "url": "https://twitter.com/4eSport_Efrei",
+        "icon_url": "https://twitter.4esport.fr/img/twitter.png"
+    },
+    "footer": {
+        "text": "Twitter",
+        "icon_url": "https://twitter.4esport.fr/img/twitter.png"
+    }
+}
