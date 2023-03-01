@@ -14,6 +14,7 @@ useHead({
   meta: [
     { property: "og:site_name", content: "Twitter" },
     { property: "og:type", content: `article` },
+    {content: "Likes : 30000 \n ezjfizejfiçze" },
   ],
 });
 </script>
