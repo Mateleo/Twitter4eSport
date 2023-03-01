@@ -6,6 +6,7 @@ useServerSeoMeta({
   ogImage: "https://twitter.4eSport.fr/img/meta.jpg",
   twitterCard: "summary_large_image",
   themeColor: "#0ea5e9",
+  ogType:'article',
 });
 useHead({
   link: [
