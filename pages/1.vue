@@ -11,7 +11,6 @@ useHead({
   link: [
     { type: "application/json+oembed", href: "https://twitter.4eSport.fr/meta.json" },
   ],
-  meta: [{ property: "og:type", content: `article` }],
 });
 </script>
 <template>
