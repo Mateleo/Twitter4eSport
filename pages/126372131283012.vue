@@ -2,7 +2,7 @@
 useServerSeoMeta({
   description: "This is my amazing site, let me tell you all about it.",
   ogDescription:
-    "According to @anonimotum, Upset has reached a verbal agreement with Vitality for next split in the LEC \n\n Likes\n 18514",
+    "[Sources] ADC Vepo Wunder 🇫🇷 will not be playing for Temporary in the GL next split.\n\n It has not been fully decided who will replace him but Ink 🇫🇷 is likely to be promoted. \n\n <b>Likes</b>\n 18514",
   ogImage: "https://twitter.4eSport.fr/img/meta.jpg",
   twitterCard: "summary_large_image",
   themeColor: "#0ea5e9",
