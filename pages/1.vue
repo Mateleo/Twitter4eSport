@@ -9,6 +9,10 @@ useServerSeoMeta({
 useHead({
   link:[
     {type:"application/json+oembed",href:"https://twitter.4eSport.fr/meta.json"}
+  ],
+  meta:[
+    {property:"og:site_name",content:"Twitter"}
+    {property:"og:type",content:`article`}
   ]
 })
 
