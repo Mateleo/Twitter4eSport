@@ -1,5 +1,5 @@
 # Use the official Node.js image as base
-FROM node:18-slim
+FROM node:18
 
 # Set the working directory in the container
 WORKDIR /app
@@ -20,4 +20,4 @@ RUN npm run build
 EXPOSE 3000
 
 # Command to start the Nuxt 3 application
-CMD ["node" ".output/server/index.mjs"]
+CMD [ "npm", "run", "start" ]
