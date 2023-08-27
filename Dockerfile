@@ -17,7 +17,7 @@ RUN pnpm install
 COPY . /app
 
 # Build the Nuxt 3 project
-RUN pnpm run build
+RUN npm run build
 
 # Expose the port that Nuxt will run on
 EXPOSE 3000
