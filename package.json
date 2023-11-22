@@ -9,6 +9,6 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "nuxt": "^3.7.0"
+    "nuxt": "^3.8.2"
   }
 }
