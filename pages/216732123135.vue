@@ -44,9 +44,9 @@ useHead({
           <p class="leading-5">- Lew aurait monté la tête de Doser contre le reste des joueurs (présent au TO)</p>
           <p class="leading-5">- Doser ne s'est pas encore exprimé sur le sujet</p>
           <p class="leading-5">- Robert en embuscade pour récuper un slot ?</p>
-          <p class="mt-6">- (coupure du live, je rajouterai en dessous si suite)</p>
+          <p class="mt-6">(coupure du live, je rajouterai en dessous si suite)</p>
           <p class="mt-6 leading-5">
-            - (Petit message perso : ça se ressent que Mouameme se livre totalement et est vraiment touché par tout ça,
+            (Petit message perso : ça se ressent que Mouameme se livre totalement et est vraiment touché par tout ça,
             j'espère vraiment que 4eSport pourra gagner la GL, elle la mérite ❤️)
           </p>
         </div>
