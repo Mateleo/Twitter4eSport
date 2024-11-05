@@ -1,23 +1,44 @@
-# Use the official Node.js image as base
-FROM node:18
+ARG NODE_VERSION=20.14.0
 
-# Set the working directory in the container
+# Create build stage
+FROM node:${NODE_VERSION}-slim AS build
+
+# Enable pnpm
+ENV PNPM_HOME="/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
+RUN corepack enable
+
+# Set the working directory inside the container
 WORKDIR /app
 
-# Copy package.json and package-lock.json to the container
-COPY package*.json ./
+# Copy package.json and pnpm-lock.yaml files to the working directory
+COPY ./package.json /app/
+COPY ./pnpm-lock.yaml /app/
 
-# Install project dependencies
-RUN npm install
+## Install dependencies
+RUN pnpm install --shamefully-hoist
 
-# Copy the rest of the application code to the container
-COPY . .
+# Copy the rest of the application files to the working directory
+COPY . ./
 
-# Build the Nuxt 3 project
-RUN npm run build
+# Build the application
+RUN pnpm run build
 
-# Expose the port that the application will run on
+# Create a new stage for the production image
+FROM node:${NODE_VERSION}-slim
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy the output from the build stage to the working directory
+COPY --from=build /app/.output ./
+
+# Define environment variables
+ENV HOST=0.0.0.0 NODE_ENV=production
+ENV NODE_ENV=production
+
+# Expose the port the application will run on
 EXPOSE 3000
 
-# Command to start the Nuxt 3 application
-CMD [ "npm", "run", "start" ]
+# Start the application
+CMD ["node","/app/server/index.mjs"]
