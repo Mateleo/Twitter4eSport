@@ -2,7 +2,7 @@
 useSeoMeta({
   description: "This is my amazing site, let me tell you all about it.",
   ogDescription:
-    "\n\nDEBRIEF LIVE MOUAMEME - AFFAIRE ELITE/DOLEX\n\n(Rien n'est mon avis juste la retranscription de Mouameme)\n\n\n- Dioubot ne supporte plus le faible niveau de Turdyo\n- Celui-ci le voit comme une trahison.",
+    "DEBRIEF LIVE MOUAMEME - AFFAIRE ELITE/DOLEX\n\n(Rien n'est mon avis juste la retranscription de Mouameme)\n\n- Dioubot ne supporte plus le faible niveau de Turdyo\n- Celui-ci le voit comme une trahison.\n- Lew n'aurait pas quitté l'équipe mais aurait été bench (départ forcé)\n\nClick to see more!",
   twitterCard: "summary_large_image",
   themeColor: "#0ea5e9",
   ogType: "website",
