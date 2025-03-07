@@ -16,9 +16,6 @@ COPY . .
 # Build the Nuxt 3 project
 RUN npm run build
 
-# Generate Prisma client
-RUN npx prisma generate
-
 # Stage 2: Create the final, optimized image
 FROM node:22
 
