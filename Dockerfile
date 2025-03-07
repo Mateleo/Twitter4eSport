@@ -25,6 +25,7 @@ WORKDIR /app
 # Copy necessary files from the builder stage
 COPY --from=builder /app/.output ./.output
 COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/package*.json ./
 
 # Expose the port that the application will run on
 EXPOSE 3000
