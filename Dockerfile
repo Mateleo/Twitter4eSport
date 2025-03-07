@@ -1,44 +1,38 @@
-ARG NODE_VERSION=20.14.0
+# Stage 1: Build the application
+FROM node:22 AS builder
 
-# Create build stage
-FROM node:${NODE_VERSION}-slim AS build
-
-# Enable pnpm
-ENV PNPM_HOME="/pnpm"
-ENV PATH="$PNPM_HOME:$PATH"
-RUN corepack enable
-
-# Set the working directory inside the container
+# Set the working directory
 WORKDIR /app
 
-# Copy package.json and pnpm-lock.yaml files to the working directory
-COPY ./package.json /app/
-COPY ./pnpm-lock.yaml /app/
+# Copy package.json and package-lock.json
+COPY package*.json ./
 
-## Install dependencies
-RUN pnpm install --shamefully-hoist
+# Install dependencies
+RUN npm install
 
-# Copy the rest of the application files to the working directory
-COPY . ./
+# Copy the rest of the application code
+COPY . .
 
-# Build the application
-RUN pnpm run build
+# Build the Nuxt 3 project
+RUN npm run build
 
-# Create a new stage for the production image
-FROM node:${NODE_VERSION}-slim
+# Generate Prisma client
+RUN npx prisma generate
 
-# Set the working directory inside the container
+# Stage 2: Create the final, optimized image
+FROM node:22
+
+# Set the working directory
 WORKDIR /app
 
-# Copy the output from the build stage to the working directory
-COPY --from=build /app/.output ./
+# Copy necessary files from the builder stage
+COPY --from=builder /app/.output ./.output
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/package*.json ./
+COPY --from=builder /app/prisma ./prisma
 
-# Define environment variables
-ENV HOST=0.0.0.0 NODE_ENV=production
-ENV NODE_ENV=production
-
-# Expose the port the application will run on
+# Expose the port that the application will run on
 EXPOSE 3000
 
-# Start the application
-CMD ["node","/app/server/index.mjs"]
+# Command to start the Nuxt 3 application
+CMD [ "npm", "run", "start" ]
