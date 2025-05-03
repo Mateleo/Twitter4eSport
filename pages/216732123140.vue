@@ -55,7 +55,7 @@ const contentImageUrl = ref("https://twitter.4eSport.fr/img/trump-executive-orde
 
         <!-- Timestamp/Views Section -->
         <p class="text-white/50 font-thin text-sm mt-4">
-          10:30 AM · Oct 26, 2023 · <span class="font-medium text-white">5.2M</span> Views
+          10:30 AM · May 3, 2025 · <span class="font-medium text-white">5.2M</span> Views
         </p>
 
         <!-- Action Bar Placeholder -->
