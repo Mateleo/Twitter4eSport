@@ -2,8 +2,8 @@
 useServerSeoMeta({
   description: "This is my amazing site, let me tell you all about it.",
   ogDescription:
-    "We would like to inform you that we are aware of the problem concerning the change of the Riot API.\nWe understand the importance of this situation and we are actively working to correct it. Rest assured that we are doing everything we can to resolve this issue as quickly as possible.\n\nThank you for your patience and understanding.",
-  ogImage: "https://twitter.4eSport.fr/img/meta2_1.jpg",
+    "⛏️ GregTech: New Horizons player reaches new milestone.\n\nIn a stunning display of dedication, Never has finally unlocked the Cobblestone pickaxe after an astounding 1000 hours of gameplay.",
+  ogImage: "https://twitter.4eSport.fr/img/gtnh.webp",
   twitterCard: "summary_large_image",
   themeColor: "#0ea5e9",
   ogType: "website",
